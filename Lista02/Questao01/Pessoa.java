@@ -1,0 +1,43 @@
+package Lista02.Questao01;
+
+public class Pessoa {
+ 
+    private double peso;
+    private double altura;
+    private String nome;
+    
+    double calcularImc(){
+        return peso/(altura*altura);
+    }
+
+    void exibirInformacoes(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Altura: " + altura);
+        System.out.println("Peso: " + peso);
+        System.out.println("IMC: " + calcularImc());
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
