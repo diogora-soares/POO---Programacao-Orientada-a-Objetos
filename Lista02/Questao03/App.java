@@ -17,6 +17,8 @@ public class App {
         cb1.depositar(700); 
         System.out.println("Conta 1 Saldo: " + cb1.getSaldo());
         
+        System.out.println();
+
         cb2.depositar(5000);
         System.out.println("Conta 2 Saldo: " + cb2.getSaldo());
         
