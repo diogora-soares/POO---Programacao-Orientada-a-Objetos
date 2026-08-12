@@ -23,6 +23,7 @@ public class App {
             pessoa.setPeso(peso);
 
             pessoas[i] = pessoa;
+            sc.nextLine();
         }
 
         for (int i = pessoas.length - 1; i >= 0; i--) {
