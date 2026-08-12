@@ -1,15 +1,25 @@
 package Lista02.Questao03;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
         
         ContaBancaria cb1 = new ContaBancaria();
-        cb1.setTitular("João");
-        cb1.setNumero("123456");
-        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Titular da conta 1: ");
+        cb1.setTitular(sc.nextLine());
+
+        System.out.print("Número da conta 1: ");
+        cb1.setNumero(sc.nextLine());
+
         ContaBancaria cb2 = new ContaBancaria();
-        cb2.setTitular("Pedro");
-        cb2.setNumero("654321");
+        System.out.print("Titular da conta 2: ");
+        cb2.setTitular(sc.nextLine());
+
+        System.out.print("Número da conta 2: ");
+        cb2.setNumero(sc.nextLine());
         
         cb1.depositar(1000); 
         System.out.println("Conta 1 Saldo: " + cb1.getSaldo());

@@ -38,9 +38,9 @@ public class ContaBancaria {
     }
 
     public void transferir(ContaBancaria contaDestino, double valor){
-        if (valor > 0 && saldo > valor) {
+        if (valor > 0 && saldo >= valor) {
             saldo -= valor;
-            contaDestino.saldo += valor;
+            contaDestino.depositar(valor);
         }
     }
 }
